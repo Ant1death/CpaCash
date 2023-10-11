@@ -1,0 +1,102 @@
+.footer
+    padding: 80px 0px
+    background: #EAFFD8
+    &__wrapper
+        display: flex
+        align-items: flex-start
+        gap: 117px
+        padding-bottom: 40px
+        border-bottom: 1px solid #898F98
+        margin-bottom: 40px
+        &-left
+            width: 344px
+            div
+                display: flex
+                align-items: center
+                gap: 8px
+                margin-bottom: 24px
+                a:nth-of-type(1)
+                    display: flex
+                    justify-content: center
+                    padding: 12px
+                    border-radius: 32px
+                    background: #1F2227
+                a:nth-of-type(2)
+                    display: flex
+                    justify-content: center
+                    padding: 12px
+                    border-radius: 32px
+                    background: #1F2227
+                a:nth-of-type(3)
+                    display: flex
+                    justify-content: center
+                    padding: 12px
+                    border-radius: 32px
+                    background: #1F2227
+                a:nth-of-type(4)
+                    display: flex
+                    padding: 12px 24px
+                    justify-content: center
+                    align-items: center
+                    gap: 10px
+                    border-radius: 32px
+                    background:#85C83E
+                    color:  #FFF
+                    text-align: center
+                    font-size: 16px
+                    font-style: normal
+                    font-weight: 500
+                    line-height: 24px
+            p
+                color: #898F98
+                font-size: 14px
+                font-style: normal
+                font-weight: 400
+                line-height: 140%
+        &-right
+            display: flex
+            align-items: flex-start
+            gap: 30px
+            ul
+                width: 160px
+                li
+                    h4
+                        color: #85C83E
+                        text-align: justify
+                        font-size: 20px
+                        font-style: normal
+                        font-weight: 700
+                        line-height: 120%
+                        margin-bottom: 16px
+                    a
+                        display: block
+                        color: #1F2227
+                        font-size: 14px
+                        font-style: normal
+                        font-weight: 400
+                        line-height: 140%
+                        margin-bottom: 8px
+    &__policy
+        display: flex
+        align-items: center
+        justify-content: space-between
+        a
+            color: #1F2227
+            font-size: 14px
+            font-style: normal
+            font-weight: 400
+            line-height: 140%
+            text-decoration-line: underline
+.footer
+    .container
+        padding: 0 80px
+@media(max-width: 1199px)
+    .footer__wrapper-left div a:nth-of-type(4)
+        font-size: 12px
+        padding: 12px 14px
+    .footer__wrapper
+        gap: 24px
+    .footer__wrapper-right
+        gap: 24px
+    .footer__wrapper-left
+        width: auto

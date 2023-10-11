@@ -2,6 +2,10 @@
     &__info
         padding: 24px 80px
         margin-bottom: 80px
+        &-wrapper
+            display: flex
+            align-items: flex-start
+            gap: 94px
         &-item:nth-of-type(1)
             width: 620px
             p:nth-of-type(1)
@@ -42,6 +46,8 @@
                 font-style: normal
                 font-weight: 500
                 line-height: 24px
+        &-item:nth-of-type(2)
+            width: 366px
     &__cards
         padding: 24px 80px
         &-wrapper
@@ -78,3 +84,22 @@
                 font-style: normal
                 font-weight: 400
                 line-height: 140%
+@media(max-width: 1023px)
+    .promo__info
+        padding: 0px
+    .promo__info-item:nth-of-type(1) h1
+        font-size: 32px
+        margin-bottom: 24px
+    .promo__info-item:nth-of-type(1) p:nth-of-type(2)
+        font-size: 16px
+        margin-bottom: 32px
+    .promo__info-item:nth-of-type(1)
+        width: 50%
+    .promo__info-item
+        width: 50%
+    .promo__info-wrapper
+        gap: 24px
+    .promo__cards
+        padding: 0px
+    .promo__cards-head h3
+        font-size: 24px

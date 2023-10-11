@@ -13,7 +13,7 @@
         gap: 24px
         &-item
             width: 344px
-            height: 473px
+            min-height: 473px
             padding: 48px 30px
             display: flex
             flex-direction: column
@@ -53,3 +53,30 @@
                 line-height: 140%
 .helping .container
     padding: 0 80px
+@media(max-width: 1279px)
+    .helping__wrapper-item
+        min-height: 525px
+@media(max-width: 1199px)
+    .helping
+        padding: 0px
+    .helping__wrapper-item
+        padding: 24px 30px
+        min-height: 604px
+@media(max-width: 1023px)
+    .helping .container
+        padding: 0 20px
+    .helping__title
+        font-size: 28px
+        margin-bottom: 40px
+    .helping__wrapper
+        flex-direction: column
+        width: 100%
+    .helping__wrapper-item
+        width: 100%
+        min-height: auto
+    .helping__wrapper-item span
+        margin-bottom: 24px
+    .helping__wrapper-item h4
+        font-size: 20px
+    .helping__wrapper-item p
+        font-size: 16px
