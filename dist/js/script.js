@@ -10045,54 +10045,73 @@ swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper_modules__WEBPACK_IMPO
 window.addEventListener('DOMContentLoaded', () => {
   const companySlider = document.querySelector('.company__wrapper');
   if (companySlider) {
-    if (window.innerWidth >= 1024) {
-      const companySlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.company__wrapper', {
-        loop: false,
-        direction: 'horizontal',
-        allowTouchMove: false,
-        draggable: false,
-        simulateTouch: false,
-        slidesPerView: 3,
-        spaceBetween: 24,
-        navigation: {
-          nextEl: '.company__next',
-          prevEl: '.company__prev'
-        }
-      });
-    }
-  }
-  const offlineSlider = document.querySelector('.offline__wrapper');
-  if (offlineSlider) {
-    if (window.innerWidth >= 1024) {
-      const offlineSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.offline__wrapper', {
-        loop: false,
-        direction: 'horizontal',
-        allowTouchMove: false,
-        draggable: false,
-        simulateTouch: false,
-        slidesPerView: 3,
-        spaceBetween: 24,
-        breakpoints: {
-          1200: {
-            loop: false,
-            direction: 'horizontal',
-            allowTouchMove: false,
-            draggable: false,
-            simulateTouch: false,
-            slidesPerView: 3,
-            spaceBetween: 24
-          },
-          768: {
-            slidesPerView: 2
-          }
+    // if(window.innerWidth >= 1024) {
+
+    // }
+    const companySlider = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.company__wrapper', {
+      loop: false,
+      direction: 'horizontal',
+      allowTouchMove: false,
+      draggable: false,
+      simulateTouch: false,
+      slidesPerView: 3,
+      spaceBetween: 24,
+      navigation: {
+        nextEl: '.company__next',
+        prevEl: '.company__prev'
+      },
+      breakpoints: {
+        769: {
+          slidesPerView: 3,
+          slidesPerGroup: 1,
+          allowTouchMove: false,
+          draggable: false,
+          simulateTouch: false,
+          spaceBetween: 9
         },
-        navigation: {
-          nextEl: '.offline__next',
-          prevEl: '.offline__prev'
+        0: {
+          slidesPerView: 1,
+          allowTouchMove: true,
+          draggable: true,
+          simulateTouch: true,
+          spaceBetween: 10
         }
-      });
-    }
+      }
+    });
   }
+  // const offlineSlider = document.querySelector('.offline__wrapper');
+  // if(offlineSlider) {
+  //     if(window.innerWidth >= 1024) {
+  //         const offlineSlider = new Swiper('.offline__wrapper', {
+  //             loop: false,
+  //             direction: 'horizontal',
+  //             allowTouchMove: false,
+  //             draggable: false,
+  //             simulateTouch: false,
+  //             slidesPerView: 3,
+  //             spaceBetween: 24,
+  //             breakpoints: {
+  //                 1200: {
+  //                     loop: false,
+  //                     direction: 'horizontal',
+  //                     allowTouchMove: false,
+  //                     draggable: false,
+  //                     simulateTouch: false,
+  //                     slidesPerView: 3,
+  //                     spaceBetween: 24,
+  //                 },
+  //                 768: {
+  //                     slidesPerView: 2,
+  //                 },
+  //             },
+  //             navigation: {
+  //               nextEl: '.offline__next',
+  //               prevEl: '.offline__prev',
+  //             },
+  //         });
+  //     }
+
+  // }
 });
 }();
 /******/ })()
