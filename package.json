@@ -31,6 +31,7 @@
   "dependencies": {
     "gulp-sass": "latest",
     "sass": "^1.57.1",
-    "swiper": "^10.3.1"
+    "swiper": "^10.3.1",
+    "wow.js": "^1.2.2"
   }
 }
