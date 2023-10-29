@@ -2,6 +2,7 @@
     border-radius: 32px
     background:#EAFFD8
     padding: 80px 0
+    overflow: hidden
     &__title
         width: 622px
         color: #1F2227
@@ -24,6 +25,7 @@
         gap: 24px
         &-item
             width: 530px
+            position: relative
             h3
                 color: #1F2227
                 font-size: 28px
@@ -51,7 +53,7 @@
                     align-items: center
                     gap: 16px
                     margin-bottom: 30px
-                    &:nth-of-type(1)
+                    &.active
                         span
                             color: #FFF
                             background: #85C83E
@@ -75,6 +77,13 @@
                         font-style: normal
                         font-weight: 400
                         line-height: 140%
+            img
+                display: none
+                &.active
+                    position: absolute
+                    left: 0
+                    top: 0
+                    display: block
 .bonus
     .container
         padding: 0 80px
@@ -109,3 +118,8 @@
         width: 100%
         padding: 12px
         font-size: 16px
+    .bonus__wrapper-item:nth-of-type(2)
+        min-height: 360px
+    .bonus__wrapper-item img.active
+        transform: translateX(-50%)
+        left: 50%
