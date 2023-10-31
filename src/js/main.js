@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded',() => {
                     allowTouchMove: false,
                     draggable: false,
                     simulateTouch: false,
-                    spaceBetween: 9,
+                    spaceBetween: 24,
                   },
                 0: {
                   slidesPerView: 1,

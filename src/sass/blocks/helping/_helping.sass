@@ -57,6 +57,14 @@
     background-image: url(../img/bg_green_mountain.png)
     background-size: cover
     background-repeat: no-repeat
+@media(max-width: 1920px)
+    .helping
+        background-size: contain
+        background-position: center
+@media(max-width: 1700px)
+    .helping
+        background-size: cover
+        background-position: unset
 @media(max-width: 1279px)
     .helping__wrapper-item
         min-height: 525px
@@ -66,6 +74,8 @@
     .helping__wrapper-item
         padding: 24px 30px
         min-height: 604px
+    .helping
+        background-position: top
 @media(max-width: 1023px)
     .helping .container
         padding: 0 20px
@@ -84,6 +94,3 @@
         font-size: 20px
     .helping__wrapper-item p
         font-size: 16px
-@media(max-width: 767px)
-    .helping
-        background-position: top
